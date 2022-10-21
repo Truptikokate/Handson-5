@@ -1,0 +1,427 @@
+body{
+    background-color: yellow;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 20px;
+}
+.box1,.box3{
+    background-color: steelblue;
+}
+.box2{
+    background-color: rgb(164, 134, 166) ;
+}
+#item1{
+    background-color: steelblue;
+    border: 3px solid rgb(48, 85, 113);
+}
+#item2{
+    background-color: rgb(179, 1, 1);
+    border: 3px solid maroon;
+}
+#item3{
+    background-color: limegreen;
+    border: 3px solid rgb(37, 154, 37);
+}
+a{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+
+
+.boxb1{
+    /* transform: skewX(-0.06turn); */
+    animation-name: b1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes b1 {
+    0%{
+        transform: skewX(-0.09turn);
+    }
+    50%{
+        transform: skewX(.359rad);
+    }
+}
+
+.box2{
+    animation-name: b2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes b2 {
+    0%{
+        transform: skewY(-0.05turn);
+    }
+    50%{
+        transform: skewY(0.200rad);
+    }
+}
+
+.box3{
+    animation-name: b3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes b3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 25%{
+        transform: rotate(90deg); 
+    } */
+    /* 50%{
+        transform: rotate(180deg);
+    } */
+    /* 75%{
+        transform: rotate(270deg);
+    } */
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#item1{
+    animation-name: i1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes i1 {
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0.5);
+    }
+}
+
+#item2{
+    animation-name: i2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes i2 {
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(0.5);
+    }
+}
+#item3{
+    animation-name: i3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes i3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(105deg); 
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(105deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Page 2*/
+.container{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    display: inline-block;
+    /* margin-top: 20px; */
+    margin: 0px auto;
+}
+.center{
+    display: inline;
+    text-align: center;
+    list-style-position:inside;
+}
+
+#container1:hover{
+    animation-name: c1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+   
+}
+@keyframes c1{
+    0%{
+         left: 0;
+    }
+    50%{
+        width: 400px;
+    }
+}
+#container2{
+    transition: width 2s, height 2s;
+}
+#container2:hover{
+    /* animation-name: c2; */
+    /* animation-duration: 5s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: ease; */
+    width: 400px;
+    height: 350px;
+   
+}
+/* @keyframes c2{
+    
+    50%{
+        width: 400px;
+      
+    }
+    75%{
+        height: 300px;
+    }
+} */
+#container3:hover{
+    animation-name: c3;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in;
+   
+}
+@keyframes c3{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+
+#container4:hover{
+    animation-name: c4;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease;
+}
+@keyframes c4{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+#container5:hover{
+    animation-name: c5;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in;
+}
+@keyframes c5{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+#container6:hover{
+    animation-name: c6;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-out;
+}
+@keyframes c6{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+#container7:hover{
+    animation-name: c7;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease;
+}
+@keyframes c7{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+
+/*Third Page*/
+.sentence{
+    position: absolute;
+    top: 0;
+    left: 500px;
+    font-size: 23px;
+    margin-top: -23px;
+}
+#sky1{
+    height: 100px;
+    z-index: 0;
+}
+/* #city{
+    width: 1000%;
+    height: 250px;
+    position: absolute;
+    top: 205px;
+    z-index: 1;
+} */
+#road{
+    width: 100%;
+    position: absolute;
+    top: 500px;
+    height: 280px;
+    /* z-index: 0; */
+}
+#car{
+    position: absolute;
+    top: 405px;
+    width: 500px;
+    left: 500px;
+    z-index: 4;
+}
+#wheel1{
+    position: absolute;
+    top: 520px;
+    width: 95px;
+    left: 540px;
+    z-index: 2;
+}
+#wheel2{
+    position: absolute;
+    top: 520px;
+    width: 95px;
+    left: 847px;
+    position: absolute;
+    z-index: 2;
+}
+#sun{
+    position: absolute;
+    top: 60px;
+    width: 100px;
+    right: 30px;
+}
+#flag{
+    position: absolute;
+    top: 390px;
+    width: 100px;
+    left: 850px;
+    z-index: 5;
+}
+
+#road{
+    width: 1000%;
+    animation-name: ro;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+   background-repeat: repeat-x;
+}
+@keyframes ro {
+   100%{
+    transform: translateX(-1400px);
+   }
+}
+
+#city {
+    position: absolute;
+    top: 205px;
+    width: 500%;
+   height: 295px;
+    z-index:1;
+    background-image: url(./assets/city.png);
+    background-repeat: repeat-x;
+    animation-name: city-ani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes city-ani {
+    100% {
+      transform: translateX(-1500px);
+    }
+  }
+ #wheel1,#wheel2{
+    animation-name: wh;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+ }
+ @keyframes wh {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg); 
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+
+ #sun{
+ animation-name: sun_ani;
+ animation-duration: 235s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+ }
+ @keyframes sun_ani {
+    100%{
+        margin-right: 1050px;
+    }
+ }
